@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.ahmed.bucstudent.NewSubject"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        app:theme="@style/toolbarTheme"
+        app:popupTheme="@style/Theme.AppCompat"
+        android:background="@color/main_color"
+        />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:id="@+id/subject_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/SubjectNameHint"
+        app:met_singleLineEllipsis="true"
+        android:layout_marginTop="106dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:met_baseColor="@color/main_color"
+        app:met_primaryColor="@color/main_color"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:id="@+id/instructor_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/instructorNameHint"
+        app:met_singleLineEllipsis="true"
+        android:layout_below="@+id/subject_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:met_baseColor="@color/main_color"
+        app:met_primaryColor="@color/main_color"/>
+
+
+
+
+
+
+    <Button
+        android:drawableTop="@drawable/ic_action_new"
+        android:paddingTop="20dp"
+        android:id="@+id/addBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#f44336"
+        android:typeface="serif"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:textSize="24dp" />
+
+</RelativeLayout>

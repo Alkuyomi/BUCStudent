@@ -1,0 +1,43 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorPrimaryDark">#E53935</item>
+
+        <item name="colorAccent" >#f44336</item>
+
+    </style>
+
+
+
+    <style name="AppTheme" parent="AppTheme.Base">
+
+    </style>
+   <style name="toolbarTheme" parent="Theme.AppCompat">
+       <item name="android:textColorPrimary">#ffffff</item>
+       <item name="actionMenuTextColor" >#ffffff</item>
+       <item name="android:textColorSecondary">#ffffff</item>
+
+   </style>
+
+    <style name="spinnreStyle" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+    </style>
+
+    <style name="Widget.Button.Toggle" parent="android:Widget">
+        <item name="android:background">@drawable/ic_toggle_bg</item>
+        <item name="android:disabledAlpha">?android:attr/disabledAlpha</item>
+    </style>
+
+    <style name="tstyle" parent="Theme.AppCompat">
+        <item name="android:buttonStyleToggle">@style/Widget.Button.Toggle</item>
+        <item name="android:textOn"></item>
+        <item name="android:textOff"></item>
+    </style>
+
+</resources>

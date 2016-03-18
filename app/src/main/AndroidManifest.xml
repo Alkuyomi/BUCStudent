@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ahmed.bucstudent" >
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- Permission to start Alarm on device reboot -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bl"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".AlarmReceiver" />
+        <receiver android:name=".RowRecevier" />
+
+        <activity
+            android:name=".WebSite"
+            android:label="@string/title_activity_web_site" >
+        </activity>
+        <activity
+            android:name=".Map"
+            android:label="@string/title_activity_map" >
+        </activity>
+        <activity
+            android:name=".Schedule"
+            android:label="@string/title_activity_schedule" >
+        </activity>
+        <activity
+            android:name=".NewSubject"
+            android:label="@string/title_activity_new_subject" >
+        </activity>
+        <activity
+            android:name=".DisplaySubjects"
+            android:label="@string/title_activity_display_subjects" >
+        </activity>
+        <activity
+            android:name=".NewTask"
+            android:label="@string/title_activity_new_task" >
+        </activity>
+        <activity
+            android:name=".NewRow"
+            android:label="@string/title_activity_new_line" >
+        </activity>
+        <activity
+            android:name=".ShowTask"
+            android:label="@string/title_activity_show_task" >
+        </activity>
+        <activity
+            android:name=".Note"
+            android:label="@string/title_activity_note" >
+        </activity>
+        <activity
+            android:name=".DisplayNotes"
+            android:label="@string/title_activity_display_notes" >
+        </activity>
+        <activity
+            android:name=".ShowNote"
+            android:label="@string/title_activity_show_note" >
+        </activity>
+        <activity
+            android:name=".EditNote"
+            android:label="@string/title_activity_edit_note" >
+        </activity>
+
+    </application>
+
+</manifest>

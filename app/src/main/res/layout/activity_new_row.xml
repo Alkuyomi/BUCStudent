@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ahmed.bucstudent.NewRow"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        app:theme="@style/toolbarTheme"
+        app:popupTheme="@style/Theme.AppCompat"
+        android:background="@color/main_color"
+        />
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/addRowBtn"
+        android:layout_below="@+id/toolbar">
+
+    <LinearLayout
+        android:id="@+id/scroll"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <Button
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/setSubject"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_shape"
+        android:textColor="#ef9a9a"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+
+        />
+
+    <Button
+        android:layout_below="@+id/setSubject"
+        android:id="@+id/setDay"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_shape"
+        android:textColor="#ef9a9a"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+
+        />
+
+    <Button
+        android:layout_below="@+id/setDay"
+        android:id="@+id/setStartTime"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_shape"
+        android:textColor="#ef9a9a"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+
+        />
+
+    <Button
+        android:layout_below="@+id/setStartTime"
+        android:id="@+id/setEndTime"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_shape"
+        android:textColor="#ef9a9a"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+
+        />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:id="@+id/room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/room"
+            app:met_singleLineEllipsis="true"
+            android:layout_below="@+id/subject_name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            app:met_baseColor="@color/main_color"
+            app:met_primaryColor="@color/main_color"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+    <Button
+
+        android:drawableTop="@drawable/ic_action_new"
+        android:paddingTop="10dp"
+        android:id="@+id/addRowBtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#f44336"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+       />
+
+
+
+</RelativeLayout>
